@@ -64,7 +64,7 @@ jobs:
 
     steps:
       - name: Wait for jobs to succeed
-        uses: lewagon/wait-on-check-action@v1.3.1
+        uses: lewagon/wait-on-check-action@v1.3.3
         with:
           check-regexp: '@await'
           ref: ${{ needs.migrate.outputs.commit-hash }}
